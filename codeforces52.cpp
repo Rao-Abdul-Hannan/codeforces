@@ -1,8 +1,35 @@
-7
-1 4 3
-2 5 8
-9 11 20
-0 0 0
-20 20 20
-4 12 3
-15 7 8
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int tc, a, b, c;
+    int num = 0;
+
+    cin >> tc;
+
+    while (num < tc)
+    {
+        cin >> a >> b >> c;
+
+        if ((a + b) == c)
+        {
+            cout << "YES" << endl;
+        }
+        else if ((a + c) == b)
+        {
+            cout << "YES" << endl;
+        }
+        else if ((b + c) == a)
+        {
+            cout << "YES" << endl;
+        }
+        else
+        {
+            cout << "NO" << endl;
+        }
+
+        num++;
+    }
+    return 0;
+}
